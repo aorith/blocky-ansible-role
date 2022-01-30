@@ -63,6 +63,6 @@
   systemd:
     name: blocky
     daemon_reload: yes
-    state: started
+    state: restarted
     enabled: yes
   when: blocky_serv.changed
