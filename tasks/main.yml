@@ -57,7 +57,6 @@
     owner: root
     group: root
     mode: '0644'
-  register: blocky_serv
 
 - name: Enable and start
   systemd:
@@ -65,4 +64,3 @@
     daemon_reload: yes
     state: restarted
     enabled: yes
-  when: blocky_serv.changed
