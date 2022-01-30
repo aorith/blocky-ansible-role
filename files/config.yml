@@ -1,0 +1,38 @@
+port: 53
+logLevel: warn
+
+upstream:
+  default:
+    - 8.8.8.8
+    - 8.8.4.4
+    - 1.1.1.1
+    - 9.9.9.9
+  moria*:
+    - 8.8.8.8
+    - 8.8.4.4
+
+caching:
+  maxTime: 5m
+
+customDNS:
+  mapping:
+    bree: 192.168.1.5
+
+
+blocking:
+  blackLists:
+    ads:
+      - https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+      - https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts
+      - https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
+    apple:
+      - |
+        ocsp.apple.com
+
+blocking:
+    clientGroupsBlock:
+      default:
+        - ads
+      moria*:
+        - apple
+
