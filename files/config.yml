@@ -17,6 +17,7 @@ caching:
 customDNS:
   mapping:
     bree: 192.168.1.5
+    pi.mono.lan: 192.168.1.8
 
 blocking:
   blackLists:
