@@ -27,9 +27,9 @@ blocking:
     apple:
       - |
         ocsp.apple.com
-    clientGroupsBlock:
-      default:
-        - ads
-      moria*:
-        - apple
+  clientGroupsBlock:
+    default:
+      - ads
+    moria*:
+      - apple
 
