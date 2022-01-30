@@ -36,6 +36,9 @@
     group: root
     remote_src: yes
 
+- name: Set Capabilities of the binary to bind to priviledged ports
+  cmd: setcap 'cap_net_bind_service=+ep' /usr/local/bin/blocky
+
 - name: Delete temporary directory
   file:
     path: "/tmp/blocky"
