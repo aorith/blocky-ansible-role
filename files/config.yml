@@ -48,6 +48,7 @@ clientLookup:
 blocking:
   blackLists:
     ads:
+      - https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
       - https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/youtubelist.txt
     ads2:
@@ -59,6 +60,5 @@ blocking:
     default:
       - ads
     mori*:
-      - ads
-      - ads2
+      - apple
 
