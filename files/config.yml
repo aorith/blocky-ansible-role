@@ -1,10 +1,12 @@
 port: 53
 logLevel: warn
 
+bootstrapDns: tcp:1.1.1.1
 upstream:
   default:
     - 8.8.8.8
     - 8.8.4.4
+    - tcp:1.1.1.1
   mori*:
     - 8.8.8.8
     - 8.8.4.4
