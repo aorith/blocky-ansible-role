@@ -59,5 +59,6 @@ blocking:
     default:
       - ads
     mori*:
-      - apple
+      - ads
+      - ads2
 
