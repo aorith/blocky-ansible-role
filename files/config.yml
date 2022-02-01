@@ -5,7 +5,7 @@ upstream:
   default:
     - 8.8.8.8
     - 8.8.4.4
-  moria*:
+  mori*:
     - 8.8.8.8
     - 8.8.4.4
 
@@ -42,6 +42,7 @@ clientLookup:
   clients:
     moria:
       - 192.168.1.182
+    moriw:
       - 192.168.1.183
 
 blocking:
@@ -57,6 +58,6 @@ blocking:
   clientGroupsBlock:
     default:
       - ads
-    moria*:
+    mori*:
       - apple
 
