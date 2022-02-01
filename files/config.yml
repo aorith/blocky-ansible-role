@@ -37,6 +37,13 @@ customDNS:
 
     edgeserver-vm1: 192.168.1.57
 
+clientLookup:
+  upstream: 192.168.1.1
+  clients:
+    moria:
+      - 192.168.1.182
+      - 192.168.1.183
+
 blocking:
   blackLists:
     ads:
