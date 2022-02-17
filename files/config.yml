@@ -12,7 +12,7 @@ upstream:
     - 8.8.4.4
 
 caching:
-  maxTime: 5m
+  maxTime: 0m
 
 customDNS:
   mapping:
