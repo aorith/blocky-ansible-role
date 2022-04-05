@@ -16,36 +16,36 @@ caching:
 
 customDNS:
   mapping:
-    odroid: 192.168.1.5
-    odroid.mono.lan: 192.168.1.5
+    odroid: 10.255.255.2
+    odroid.mono.lan: 10.255.255.2
 
-    bree: 192.168.1.5
-    bree.mono.lan: 192.168.1.5
+    bree: 10.255.255.2
+    bree.mono.lan: 10.255.255.2
 
-    pi: 192.168.1.8
-    pi.mono.lan: 192.168.1.8
+    pi: 10.255.255.3
+    pi.mono.lan: 10.255.255.3
 
-    trantor: 192.168.1.7
-    trantor.mono.lan: 192.168.1.7
+    trantor: 10.255.255.7
+    trantor.mono.lan: 10.255.255.7
 
-    comarca: 192.168.1.7
-    comarca.mono.lan: 192.168.1.7
+    comarca: 10.255.255.7
+    comarca.mono.lan: 10.255.255.7
 
-    alpine: 192.168.1.50
-    alpine.mono.lan: 192.168.1.50
+    alpine: 10.255.255.50
+    alpine.mono.lan: 10.255.255.50
 
-    moria: 192.168.1.182, 192.168.1.183
-    moria.mono.lan: 192.168.1.182, 192.168.1.183
+    moria: 10.255.255.11, 10.255.255.12
+    moria.mono.lan: 10.255.255.11, 10.255.255.12
 
-    edgeserver-vm1: 192.168.1.57
+    edgeserver-vm1: 10.255.255.57
 
 clientLookup:
-  upstream: 192.168.1.1
+  upstream: 10.255.255.1
   clients:
     moria:
-      - 192.168.1.182
+      - 10.255.255.11
     moriw:
-      - 192.168.1.183
+      - 10.255.255.12
 
 blocking:
   blackLists:
