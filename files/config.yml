@@ -38,6 +38,7 @@ customDNS:
     moria.mono.lan: 10.255.255.11, 10.255.255.12
 
     edgeserver-vm1: 10.255.255.57
+    debian-k3s: 10.255.255.58
 
 clientLookup:
   upstream: 10.255.255.1
